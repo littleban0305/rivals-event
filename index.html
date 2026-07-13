@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>Rivals Event</title>
+
+<style>
+body{
+    background:#0f172a;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+    padding:50px;
+}
+
+button{
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2563eb;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎮 Rivals Summer Event</h1>
+
+<h2 id="money">R幣：0</h2>
+
+<button onclick="addMoney()">
+完成任務
+</button>
+
+<script>
+
+let money = 0;
+
+function addMoney(){
+
+    money += 20;
+
+    document.getElementById("money").innerHTML =
+        "R幣：" + money;
+
+}
+
+</script>
+
+</body>
+</html>
