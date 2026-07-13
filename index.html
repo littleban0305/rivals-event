@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,70 +7,89 @@
     <title>Rivals 任務中心</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<nav>
+
+    <div class="logo">
+        ⚔ Rivals 任務中心
+    </div>
+
+    <ul>
+
+        <li><a href="#">首頁</a></li>
+
+    </ul>
+
+</nav>
+
 <header class="hero">
-
-    <nav class="navbar">
-
-        <div class="logo">
-            🎮 Rivals 任務中心
-        </div>
-
-        <ul>
-
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">任務</a></li>
-            <li><a href="#">商店</a></li>
-            <li><a href="#">規則</a></li>
-
-        </ul>
-
-    </nav>
 
     <div class="hero-content">
 
-        <h1>Rivals 任務中心</h1>
+        <h1>
+            Rivals Battle Pass
+        </h1>
 
         <p>
-            完成任務，獲得 R 幣，
-            兌換各種豐富獎勵！
+            完成每日任務、累積 R 幣、解鎖 Battle Pass 獎勵。
         </p>
 
-        <button id="startButton">
-            開始挑戰
+        <button id="startBtn">
+            開始挑戰 →
         </button>
 
     </div>
 
 </header>
 
-    <section class="player">
+<main>
 
-    <div class="card">
+<section class="cards">
 
-        <h2>👤 玩家資訊</h2>
+<div class="card">
 
-        <p><strong>玩家：</strong>弟弟</p>
+<h2>👤 玩家資訊</h2>
 
-        <p><strong>R 幣：</strong><span id="money">0</span> R</p>
+<p>玩家：<span id="username">Guest</span></p>
 
-        <p><strong>等級：</strong>Lv.1</p>
+<p>等級：Lv.1</p>
 
-        <div class="progress">
+</div>
 
-            <div class="progress-bar"></div>
+<div class="card">
 
-        </div>
+<h2>💰 R 幣</h2>
 
-    </div>
+<h1 id="coins">
+0
+</h1>
+
+</div>
+
+<div class="card">
+
+<h2>🎫 Battle Pass</h2>
+
+<div class="progress">
+
+<div class="progress-bar" style="width:20%"></div>
+
+</div>
+
+<p>20 / 100 EXP</p>
+
+</div>
 
 </section>
+
+</main>
 
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
