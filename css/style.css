@@ -339,3 +339,11 @@ font-size:22px;
     }
 
 }
+
+#startBtn:hover{
+
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:0 0 25px #a64dff;
+
+}
