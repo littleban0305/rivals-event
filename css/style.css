@@ -16,48 +16,134 @@ body{
 }
 
 /* =========================
-   導覽列
+   Navbar V2
 ========================= */
 
-nav{
+.navbar{
+
+    width:94%;
+
+    height:82px;
+
+    margin:20px auto;
+
+    border-radius:22px;
+
     display:flex;
-    justify-content:space-between;
+
     align-items:center;
 
-    padding:20px 8%;
+    justify-content:space-between;
 
-    background:rgba(0,0,0,.35);
+    padding:0 28px;
 
-    backdrop-filter:blur(10px);
+    background:rgba(18,18,28,.75);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
 
     position:sticky;
-    top:0;
+
+    top:15px;
+
+    z-index:999;
+
 }
 
 .logo{
-    font-size:28px;
-    font-weight:900;
-    color:#b76cff;
-}
 
-nav ul{
-    list-style:none;
     display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo-icon{
+
+    font-size:42px;
+
+    color:#b36cff;
+
+}
+
+.logo-text h2{
+
+    font-size:30px;
+
+    margin:0;
+
+}
+
+.logo-text span{
+
+    color:#b36cff;
+
+    font-size:15px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
     gap:25px;
+
 }
 
-nav a{
+.nav-links a{
+
     color:white;
+
     text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
     transition:.25s;
-}
-
-nav a:hover{
-
-    color:#c787ff;
 
 }
 
+.nav-links a:hover{
+
+    background:#8f49ff;
+
+}
+
+.active{
+
+    background:#9b57ff;
+
+}
+
+.login-btn{
+
+    background:none;
+
+    border:2px solid #9b57ff;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#9b57ff;
+
+}
 /* =========================
    Hero
 ========================= */
