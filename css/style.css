@@ -126,3 +126,71 @@ button:hover{
     background:#7c3aed;
 
 }
+
+.player{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:-70px;
+
+    padding:0 20px 80px;
+
+}
+
+.card{
+
+    width:800px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.4);
+
+}
+
+.card h2{
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    margin:15px 0;
+
+}
+
+.progress{
+
+    margin-top:25px;
+
+    width:100%;
+
+    height:18px;
+
+    background:#2e3148;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    width:25%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#8b5cf6,#c084fc);
+
+}
