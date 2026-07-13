@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
-<meta charset="UTF-8">
-<title>Rivals Event</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-    background:#0f172a;
-    color:white;
-    font-family:Arial;
-    text-align:center;
-    padding:50px;
-}
+    <title>Rivals Summer Event</title>
 
-button{
-    padding:15px 30px;
-    font-size:18px;
-    border:none;
-    border-radius:10px;
-    background:#3b82f6;
-    color:white;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#2563eb;
-}
-</style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>🎮 Rivals Summer Event</h1>
+    <header>
+        <h1>🎮 Rivals Summer Event</h1>
+        <p>完成任務，獲得 R 幣，兌換豐富獎勵！</p>
+    </header>
 
-<h2 id="money">R幣：0</h2>
+    <nav>
 
-<button onclick="addMoney()">
-完成任務
-</button>
+        <a href="#">首頁</a>
 
-<script>
+        <a href="#">任務</a>
 
-let money = 0;
+        <a href="#">商店</a>
 
-function addMoney(){
+        <a href="#">成就</a>
 
-    money += 20;
+        <a href="#">規則</a>
 
-    document.getElementById("money").innerHTML =
-        "R幣：" + money;
+    </nav>
 
-}
+    <main>
 
-</script>
+        <section class="hero">
+
+            <h2>歡迎來到活動中心</h2>
+
+            <p>
+                完成各種任務即可獲得 R 幣，
+                使用 R 幣可以兌換 Skin Case！
+            </p>
+
+            <button>開始挑戰</button>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
